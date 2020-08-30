@@ -12,9 +12,9 @@ The dataset was released under Open Licence by Région Île-de-France: https://w
 
 ## Tech Stack
 
-Database : MongoDB Atlas
-Backend : NodeJS, Express, Mongoose
-Frontend : Angular, NGX-Admin
+* Database : MongoDB Atlas
+* Backend : NodeJS, Express, Mongoose
+* Frontend : Angular, NGX-Admin
 
 ## Instructions
 
