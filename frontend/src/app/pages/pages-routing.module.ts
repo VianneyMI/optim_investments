@@ -2,6 +2,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 import { PagesComponent } from './pages.component';
+import { DetailsComponent } from './details/details.component';
 
 
 const routes: Routes = [{
@@ -26,6 +27,11 @@ const routes: Routes = [{
       path: 'tables',
       loadChildren: () => import('./tables/tables.module')
         .then(m => m.TablesModule),
+    },
+
+    {
+      path: 'details/:_id',
+      component:DetailsComponent,
     },
 
     {

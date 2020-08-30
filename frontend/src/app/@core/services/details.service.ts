@@ -1,13 +1,12 @@
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
-import { SmartTableData } from '../data/smart-table';
 import { Operation } from "../../../../../backend";
 import { HttpClient } from "@angular/common/http";
 import { environment } from "../../../environments/environment";
 
 
 @Injectable()
-export class SmartTableService  {
+export class DetailsService  {
  
   constructor(private http: HttpClient) {}
 
@@ -17,7 +16,6 @@ export class SmartTableService  {
   getOperations(): Observable<Operation[]> {
     return this.http.get<Operation[]>(`${environment.apiUrl}/operations`);
   }
-
   getOperation(id:string): Observable<Operation> {
     return this.http.get<Operation>(`${environment.apiUrl}/operations/${id}`);
   }
