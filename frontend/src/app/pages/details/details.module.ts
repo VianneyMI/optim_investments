@@ -39,6 +39,6 @@ import { DetailsService } from 'app/@core/services/details.service';
   exports: [],
   declarations: [DetailsComponent],
   entryComponents: [],
-  //providers: [DetailsService],
+  providers: [DetailsService],
 })
 export class DetailsModule { }

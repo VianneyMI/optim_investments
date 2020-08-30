@@ -35,7 +35,7 @@ export class SmartTableComponent {
       },
       titreoperation: {
         title: 'Titre Operation',
-        type: 'string',
+        type: 'html',
       },
       ville: {
         title: 'Ville',
@@ -57,6 +57,9 @@ export class SmartTableComponent {
   constructor(private service: SmartTableService) {
     this.source = new LocalDataSource();
     this.service.getOperations().subscribe((data) => {
+      for (let i = 0; i<data.length; i++){
+        data[i].titreoperation='<a href=http://localhost:4200/pages/details/'+data[i]._id+'>'+data[i].titreoperation+'</a>';
+      }
       this.source.load(data);
     });
   }
