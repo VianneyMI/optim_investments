@@ -52,7 +52,7 @@ export class SmartTableComponent {
     },
   };
 
-  //source: LocalDataSource = new LocalDataSource();
+  
 
   constructor(private service: SmartTableService) {
     this.source = new LocalDataSource();
