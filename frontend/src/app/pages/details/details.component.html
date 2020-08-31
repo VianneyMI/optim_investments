@@ -1,38 +1,37 @@
 <div class="row">
     <div class="col-lg-12">
       <nb-card>
-        <nb-card-header>Details</nb-card-header>
+        <nb-card-header>Détails de l'opération : </nb-card-header>
+        
         <nb-card-body>
-          <label>Titre Opération:</label>
-          <input type="text" nbInput fullWidth placeholder="Titre Operation" [(value)]="operation.titreoperation"> 
-          <!-- [(value)]="operation.titreoperation" -->
-          <input type="text" nbInput fullWidth placeholder="Code UAI" [(value)]="operation.codeuai">
+          <input type="text" nbInput fullWidth title="Titre Operation" placeholder="Titre Operation" [(value)]="operation.titreoperation" readonly >
+          
+          <input type="text" nbInput fullWidth title="Code UAI" placeholder="Code UAI" [(value)]="operation.codeuai" readonly>
           <div class="full-name-inputs">
-            <input type="text" nbInput fullWidth placeholder="Ville" [(value)]="operation.ville">
-            <input type="text" nbInput fullWidth placeholder="Lycee" [(value)]="operation.lycee">
+            <input type="text" nbInput fullWidth title="Ville" placeholder="Ville" [(value)]="operation.ville" readonly>
+            <input type="text" nbInput fullWidth title="Lycee" placeholder="Lycee" [(value)]="operation.lycee"readonly>
           </div>
-          <label>Année de livraison:</label>
-          <input type="number" nbInput fullWidth placeholder="Livraison" [(value)]="operation.annee_de_livraison">
-          <input type="text" nbInput fullWidth placeholder="ppi" [(value)]="operation.ppi">
-          <input type="number" nbInput fullWidth placeholder="Enveloppe" [(value)]="operation.enveloppe_prev_en_meu">
+          <input type="number" nbInput fullWidth title="Année de livraison" placeholder="Livraison" [(value)]="operation.annee_de_livraison" readonly>
+          <input type="text" nbInput fullWidth title="ppi" placeholder="ppi" [(value)]="operation.ppi" readonly>
+          <input type="number" nbInput fullWidth title="Enveloppe" placeholder="Enveloppe" [(value)]="operation.enveloppe_prev_en_meu"readonly>
           <div class="full-name-inputs">
-            <input type="text" nbInput fullWidth placeholder="Enterprise"[(value)]="operation.entreprise">
-            <input type="text" nbInput fullWidth placeholder="Mandataire" [(value)]="operation.mandataire">
+            <input type="text" nbInput fullWidth title="Enterprise" placeholder="Enterprise"[(value)]="operation.entreprise"readonly>
+            <input type="text" nbInput fullWidth title="Mandataire" placeholder="Mandataire" [(value)]="operation.mandataire"readonly>
           </div>
-          <input type="text" nbInput fullWidth placeholder="Maîtrise d'oeuvre" [(value)]="operation.maitrise_d_oeuvre">
-          <input type="text" nbInput fullWidth placeholder="Etat d'avancement"[(value)]="operation.etat_d_avancement">
+          <input type="text" nbInput fullWidth title="Maîtrise d'oeuvre" placeholder="Maîtrise d'oeuvre" [(value)]="operation.maitrise_d_oeuvre" readonly>
+          <input type="text" nbInput fullWidth title="Etat d'avancement" placeholder="Etat d'avancement" [(value)]="operation.etat_d_avancement" readonly>
           <div class="full-name-inputs">
-            <input type="datetime" nbInput fullWidth placeholder="Année d'individualisation"[(value)]="operation.annee_d_individualisation">
-            <input type="datetime" nbInput fullWidth placeholder="Notification du marché"[(value)]="operation.notification_du_marche">
-            <input type="datetime" nbInput fullWidth placeholder="CAO attribution"[(value)]="operation.cao_attribution">
+            <input type="datetime" nbInput fullWidth title="Année d'individualisation" placeholder="Année d'individualisation"[(value)]="operation.annee_d_individualisation" readonly>
+            <input type="datetime" nbInput fullWidth title="Notification du marché" placeholder="Notification du marché"[(value)]="operation.notification_du_marche"readonly>
+            <input type="datetime" nbInput fullWidth title="CAO attribution" placeholder="CAO attribution"[(value)]="operation.cao_attribution"readonly>
           </div>
           <div class="full-name-inputs">
-            <input type="text" nbInput fullWidth placeholder="Mode de dévolution"[(value)]="operation.mode_de_devolution">
-            <input type="number" nbInput fullWidth placeholder="Montant des votes"[(value)]="operation.montant_des_ap_votes_en_meu">
+            <input type="text" nbInput title="Mode de dévolution" placeholder="Mode de dévolution"[(value)]="operation.mode_de_devolution"readonly>
+            <input type="number" nbInput fullWidth title="Montant des votes" placeholder="Montant des votes"[(value)]="operation.montant_des_ap_votes_en_meu"readonly>
           </div>
           <div class="full-name-inputs">
-            <input type="number" nbInput fullWidth placeholder="Longitude" [(value)]="operation.longitude">
-            <input type="number" nbInput fullWidth placeholder="Latitude" [(value)]="operation.latitude">
+            <input type="number" nbInput fullWidth title="Longitude" placeholder="Longitude" [(value)]="operation.longitude"readonly>
+            <input type="number" nbInput fullWidth title="Latitude" placeholder="Latitude" [(value)]="operation.latitude"readonly>
           </div>
 
           <!-- <input type="text" nbInput fullWidth shape="rectangle" placeholder="Rectangle border">
